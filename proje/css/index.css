@@ -19,7 +19,7 @@ img{
 
 section{
     padding: 200px 0;
-    background: #069;
+    background:rgb(114, 174, 192);
 }
 .section_title{
     margin-bottom: 30px;
@@ -37,7 +37,7 @@ section{
 
 /*--------------------------------------------------------------*/
 header{
-    background:teal;
+    background:cadetblue;
     border-bottom: 1px solid ghostwhite;
     position: fixed;
     width: 100%;
@@ -69,4 +69,40 @@ header{
 } 
 .nav-baslik li a:hover{
     background: darkslategrey;
+}
+
+.ebeveyn_anasayfa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    color:white;
+}
+.cocuk_anasayfa{
+    flex-basis: 43%;
+}
+.cocuk_anasayfa h1{
+    font-size: 40px;
+    color:rgb(0, 172, 172);
+    margin-bottom: 25px;
+}
+.cocuk_anasayfa p{
+    font-size: 30px;
+    color:rgb(189, 243, 243);
+    margin-bottom: 25px;
+}
+.btn{
+    background: darkslategrey;
+    padding: 15px 25px;
+    border-radius: 15px;
+    margin-left: 35px;
+    color:white;
+    border: 2px solid darkslategrey;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.btn:hover{
+    background: transparent;
 }
