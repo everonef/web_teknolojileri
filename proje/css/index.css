@@ -29,7 +29,7 @@ section{
     text-align: center;
     color: white;
     font-size: 30px;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .section_title h2:hover{
     background-color: cadetblue;
@@ -65,7 +65,7 @@ header{
     color: white;
     padding: 5px 15px;
     border-radius: 5px;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 } 
 .nav-baslik li a:hover{
     background: darkslategrey;
