@@ -18,7 +18,7 @@ img{
 }
 
 section{
-    padding: 200px 0;
+    padding: 120px 0;
     background:rgb(114, 174, 192);
 }
 .section_title{
@@ -32,7 +32,7 @@ section{
     transition: all .3s ease-in-out;
 }
 .section_title h2:hover{
-    background-color: cadetblue;
+    background-color:rgb(5, 155, 155);
 }
 
 /*--------------------------------------------------------------*/
@@ -70,7 +70,7 @@ header{
 .nav-baslik li a:hover{
     background: darkslategrey;
 }
-
+/*--------------------------------------------------------------*/
 .ebeveyn_anasayfa{
     display: flex;
     align-items: center;
@@ -106,3 +106,97 @@ header{
 .btn:hover{
     background: transparent;
 }
+/*--------------------------------------------------------------*/
+.ebeveyn_miras{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.cocuk_miras{
+    flex-basis: 47%;
+    padding: 75px 95px;
+    background: rgb(143, 200, 219);
+}
+.cocuk_miras h3{
+    font-size: 25px;
+    color:darkcyan;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cocuk_miras p{
+    font-size: 17px;
+    color:white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/*--------------------------------------------------------------*/
+.baslik_tanitim p{
+    padding: 20px 50px;
+    font-size: 17px;
+    color:white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ebeveyn_tanitim{
+    display: flex;
+    align-items: center;
+    width: 93%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.cocuk_tanitim{
+    flex-basis: 31%;
+    padding: 20px 40px;
+    background: rgb(143, 200, 219);
+}
+.cocuk_tanitim h3{
+    font-size: 23px;
+    color:darkcyan;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cocuk_tanitim p{
+    font-size: 17px;
+    color:white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.slider_tanitim{
+    margin-left:350px;
+    width: 795px;
+    height: 500px;
+    border: 2px solid white; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+.foto{
+    width: 500%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    animation: slider_tanitim infinite 20s alternate;
+}
+.foto img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes slider_tanitim{
+    0%{left: 0%;}
+    15%{left: 0%;}
+    20%{left: -100%;}
+    35%{left: -100%;}
+    40%{left: -200%;}
+    55%{left: -200%;}
+    60%{left: -300%;}
+    75%{left: -300%;}
+    80%{left: -400%;}
+    95%{left: -400%;}
+}
+/*--------------------------------------------------------------*/
+
+
