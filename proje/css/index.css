@@ -18,7 +18,7 @@ img{
 }
 
 section{
-    padding: 120px 0;
+    padding: 150px 0;
     background:rgb(114, 174, 192);
 }
 .section_title{
@@ -36,7 +36,7 @@ section{
 }
 
 /*--------------------------------------------------------------*/
-header{
+#bar{
     background:cadetblue;
     border-bottom: 1px solid ghostwhite;
     position: fixed;
@@ -142,15 +142,16 @@ header{
 
 .ebeveyn_tanitim{
     display: flex;
-    align-items: center;
-    width: 93%;
-    justify-content: space-between;
-    margin: 0 auto;
+    /*align-items: center;*/
+    width: 81%;
+    justify-content:space-between;
+    margin: 250px auto;
     margin-bottom: 30px;
+    margin-top: 50px;
 }
 .cocuk_tanitim{
-    flex-basis: 31%;
-    padding: 20px 40px;
+    flex-basis: 30%;
+    padding: 30px 40px;
     background: rgb(143, 200, 219);
 }
 .cocuk_tanitim h3{
@@ -160,9 +161,10 @@ header{
     text-align: center;
 }
 .cocuk_tanitim p{
-    font-size: 17px;
+    font-size: 18px;
     color:white;
     margin-bottom: 10px;
+    min-width: 275px;
     text-align: center;
 }
 
@@ -198,5 +200,172 @@ header{
     95%{left: -400%;}
 }
 /*--------------------------------------------------------------*/
+
+#cv header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    color: darkslategray;
+}
+#cv header img{
+    margin-left: -20px;
+    width: 180px;
+    height: 250px;
+    border-radius: 25px;
+
+}
+.divider {
+    border-top: 2px solid white; 
+    margin:0  100px; 
+}
+
+#cv header h2{
+    margin-right: 500px;
+    font-size: 30px;
+}
+#cv header p{
+    font-size: 20px;
+}
+.ebeveyn_cv{
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto; 
+    color:white;
+}
+.cocuk_tanitim{
+    flex-basis: 11%;
+}
+.ebeveyn_cv h3{
+    font-size: 20px;
+    color:darkcyan;
+    margin-bottom: 10px;
+    margin-top: -75px;
+
+}
+.ebeveyn_cv ul{
+    font-size: 17px;
+    color:white;
+    margin-bottom: -100px;
+}
+#cv aside h3{
+    font-size: 20px;
+    color:darkcyan;
+    margin-bottom: 10px;
+}
+#cv aside p{
+    font-size: 17px;
+    color:white;
+
+}
+/*--------------------------------------------------------------*/
+.baslik_hakkimda{
+    display: flex;
+    padding: 20px 50px;
+    font-size: 18px;
+    color:white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.baslik_hakkimda img{
+    width: 150px;
+    height: 200px;
+}
+
+.baslik_hakkimda p{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.gelisme_hakkimda{
+    margin-inline-start: 40px;
+    margin-inline: 20px;
+    padding: 20px 50px;
+    font-size: 18px;
+    color:white;
+    margin-bottom: 20px;
+    text-align:left;
+}
+/*--------------------------------------------------------------*/
+
+#quote-container {
+    justify-content: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 110px auto;
+}
+#quote {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+#new-quote-btn {
+    padding: 10px 20px;
+    background-color: darkslategray;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#new-quote-btn:hover {
+    background-color: darkslategray;
+}
+/*--------------------------------------------------------------*/
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+input[type="submit"], input[type="reset"] {
+    padding: 10px 20px;
+    background-color:darkslategray;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: darkslategray;
+}
+
+.error-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffcccc;
+    padding: 10px 20px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    z-index: 999;
+    display: none; 
+}
+
+
+
+
+
+
 
 

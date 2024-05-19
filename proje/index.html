@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <link rel="stylesheet" href="css/index.css">
     <title>Eskişehir</title>
 </head>
 <body>
-    <header>
+    <header id="bar">
         <div class="navbar">
             <div class="tema">
                 <h2><a href="#">Eskişehir</i></a>
@@ -21,8 +22,8 @@
                     <li><a href="#tanitim">Gezilecek Yerler</a></li>
                     <li><a href="#cv">CV</a></li>
                     <li><a href="#ilgi">İlgi Alanları</a></li>
-                    <li><a href="#form">Form</a></li>
                     <li><a href="#hakkimda">Hakkımda</a></li>
+                    <li><a href="#form">Form</a></li>
                 </ul>
         </div>
     </header>
@@ -110,44 +111,66 @@
         <div class="section_title">
             <h2>Özgeçmiş</h2>
         </div>
+    
         <header>
             <img src="image/20240518_220950.jpg" alt="">
-            <h1> <b>Zeynep Sude Öncü</b></h1>
-            <h2>Bilgisayar Mühendisi</h2>
-            <p>zey.su.oncu@gmail.com</p>
+            <h2> <b>Zeynep Sude ÖNCÜ</b> 
+                <p><br>Bilgisayar Mühendisi </p>
+                    <p><br><i>zey.su.oncu@gmail.com</i><br></p>
+            </h2>  
+           
         </header>
-            <section>
-                <h3> EĞİTİM</h3>
-                <p>Çanakkale Onsekiz Mart Üniversitesi</p>
-                <p>Bilgisayar Mühendisliği (2022-2023)</p>
-                <p>Sakarya Üniversitesi</p>
-                <p>Bilgisayar Mühendisliği (2023- ∞)</p>
-            </section>
-            <section>
-                <h3> BECERİLER</h3>
-                <p>Ekip Yönetimi</p>
-                <p>Analitik Düşünme</p>
-                <p>Problem Çözme</p>
-            </section>
-            <section>
-                <h3> DİLLER</h3>
-                <p>İngilizce</p><sub>B1</sub>
-                <p>İşaret Dili</p>
-            </section>
-            <section>
-                <h3> HOBİLER</h3>
-                <p>Voleybol</p>
-                <p>Kickboks</p>
-                <p>Sudoku</p>
-                <p>Resim</p>
-            </section>
-            <aside>
+        <div class="divider"></div>
+        <div class="ebeveyn_cv">
+            <table>
+                <tr>
+                    <th>
+                    <div class="cocuk_cv"></div>
+                        <section>
+                        <h3> EĞİTİM</h3>
+                        <ul>
+                        <li>Çanakkale Onsekiz Mart Üniversitesi</li>
+                        <li>Bilgisayar Mühendisliği (2022-2023)</li>
+                        <li>Sakarya Üniversitesi</li>
+                        <li>Bilgisayar Mühendisliği (2023- ∞)</li>
+                        </ul>
+                         </section>
+                   
+                        <section>
+                        <h3> BECERİLER</h3>
+                        <ul>
+                        <li>Ekip Yönetimi</li>
+                        <li>Analitik Düşünme </li>
+                         <li>Problem Çözme</li>
+                        </ul>
+                        </section>
+                  
+                        <section>
+                        <h3> DİLLER</h3>
+                        <ul>
+                        <li>İngilizce <sub> B1</sub></li>
+                        <li>İşaret Dili </li>
+                        </ul>
+                        </section>
+                 
+                        <section>
+                        <h3> HOBİLER</h3>
+                        <ul>
+                        <li>Voleybol</li>
+                        <li>Kickboks </li>
+                        <li>Sudoku</li>
+                        </ul>
+                        </section>
+        </div>
+            <div class="cocuk_cv">
+                    </th>
+            <th>
                 <section>
                     <h3>HAKKIMDA</h3>
-                    <p>Ortaokulda fark edilen hızlı ve verimli düşünme yeteneğini ilgi alanına giren yazılımla birleştirerek 
-                        bu alana yönelmiş gelişim göstermeyi seven bir bilgisayar mühendisliği öğrencisiyim. Ekip Çalışmasında 
-                        sorumluluk sahibi ve kriz yönetimi olan çalışkan ve çözüm odaklı biriyim. Yeni şeyler öğrenmeyi seven ve 
-                        hızlı bir şekilde adapte olabilen azimli bir öğrenciyim.
+                    <p>Ortaokulda fark edilen hızlı ve verimli düşünme yeteneğini<br> ilgi alanına  giren yazılımla birleştirerek 
+                        bu alana <br> yönelmiş gelişim göstermeyi seven bir <br> bilgisayar mühendisliği öğrencisiyim. Ekip Çalışmasında<br> 
+                        sorumluluk sahibi  ve kriz yönetimi olan çalışkan <br> ve çözüm odaklı biriyim. Yeni şeyler öğrenmeyi <br>seven ve 
+                        hızlı bir şekilde adapte olabilen <br> azimli bir öğrenciyim.
                     </p>
                 </section>
                 <section>
@@ -160,9 +183,152 @@
                     <h3>DENEYİM</h3>
                     <p>Bulunmuyor</p>
                 </section>
-            </aside>
-       
+            </th>
+        </tr>
+        </table>
+        </div>
+        </div>
     </section>
     <!--------------------------------------------->
+    <section id="ilgi">
+        <div class="section_title">
+            <h2>İlgi Alanları(Yabancı Dil) </h2>
+        </div>
+        <div id="quote-container">
+            <h2>İngilizce Özlü Sözler</h2>
+            <p id="quote"></p>
+            <button id="new-quote-btn">Yeni Cümle </button>
+        </div>
+        
+        <script>
+        document.addEventListener('DOMContentLoaded', getQuote);
+        
+        const newQuoteBtn = document.getElementById('new-quote-btn');
+        newQuoteBtn.addEventListener('click', getQuote);
+        
+        function getQuote() {
+            fetch('https://api.quotable.io/random?language=it') // Quotable API'den rastgele İtalyanca cümle al
+            .then(response => response.json())
+            .then(data => {
+                const quote = data.content; // Cümlenin metni
+                document.getElementById('quote').textContent = quote; // HTML içine ekle
+            })
+            .catch(error => {
+                console.error('Hata:', error);
+            });
+        }
+        </script>
+    </section>
+    
+    <!--------------------------------------------->
+    <section id="hakkimda">
+        <div class="section_title">
+            <h2>HAKKIMDA</h2>
+        </div>
+        <div class="baslik_hakkimda">
+                <img src="image/IMG-20191220-WA0008.jpg" alt="">
+                <p> 2004 yılı Haziran ayının 18'ine gelen cuma günü Eskişehir merkezde dünyaya geldim. Ev hanımı bir anne ve serbest meslek 
+                    çalışan bir babanın çocuğuyum. 2 kardeş olarak çocukluğum ablamla birlikte geçti. Ortaokulda 
+                    resme olan yeteneğim nedeniyle bir kaç yarışmaya katılma durumum oldu ve yine ortaokulda dövüş sporlarını sevmem nedeniyle 
+                    kick boksa başladım. Ancak liseye başlamamla bu serüvenim son buldu ve lisede voleybol oynamaya başladım.  Okul takımında önce 
+                    pasör sonra pasör çaprazı mevkilerinde oynadım ve bu serüvenimde pandemi ile birlikte sonlanmak zorunda kaldı. 
+                    </p>
+                <img src="image/biz.jpg" alt="">
+        </div>
+        <div class="gelisme_hakkimda">
+            <p>
+                Beyin yoran yabancı dizileri, aksiyon ve korku filmlerini, suç ve gizem romanlarını çok severim.
+                 İşte en sevdiğim bir kaç dizi, film, roman: <br> <br>
+            </p>
+
+            <ul>
+                <li> <a href="https://danbrown.com">https://danbrown.com</a></li>
+                <li> <a href="https://www.imdb.com/title/tt0460681/">https://www.imdb.com/title/tt0460681/</a></li> 
+                <li> <a href="https://www.imdb.com/title/tt1475582/">https://www.imdb.com/title/tt1475582/</a></li> 
+                <li> <a href="https://www.imdb.com/title/tt0167404/">https://www.imdb.com/title/tt0167404/</a></li> 
+            </ul>
+        </div>
+    </section>
+    <!--------------------------------------------->
+    <section id="form">
+        <div id="app">
+        <div class="section_title">
+            <h2>FORM</h2>
+        </div>
+        <form action="submit.php" method="post" @submit.prevent="submitForm">
+            <label for="name">Ad Soyad:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+        
+            <label>Bildiğiniz Yazılım Dilleri:</label>
+            <input type="checkbox" id="c++" name="language" value="C++">
+            <label for="c++">C++</label>
+            <input type="checkbox" id="python" name="language" value="Python">
+            <label for="python">Python</label>
+            <input type="checkbox" id="javascript" name="language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+            <label>
+                E-posta Aboneliği İstiyorum:
+                <input type="radio" id="subscribe1" name="subscribe" value="yes"> Yes
+                <input type="radio" id="subscribe2" name="subscribe" value="no">No
+            </label>
+        
+            <input type="submit" value="Gönder">
+            <input type="reset" value="Temizle">
+        </form>
+        <div class="error-message" id="errorMessage">
+            <p>Lütfen tüm alanları doğru şekilde doldurun.</p>
+        </div>
+    </div>
+    </section>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                name: '',
+                email: '',
+                formSubmitted: false,
+                errors: []
+            },
+            methods: {
+                submitForm() {
+                    this.errors = [];
+                    this.formSubmitted = true;
+        
+                    // Ad Soyad boş olup olmadığını kontrol et
+                    if (!this.name.trim()) {
+                        this.errors.push('Ad Soyad alanı boş olamaz.');
+                    }
+        
+                    // E-posta geçerli bir e-posta adresi mi kontrol et
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailPattern.test(this.email)) {
+                        this.errors.push('Geçerli bir e-posta adresi girin.');
+                    }
+        
+                    // Hata varsa formu gönderme ve hata mesajını gösterme
+                    if (this.errors.length > 0) {
+                        this.showErrorMessage();
+                    } else {
+                        // Formu gönderme işlemi burada gerçekleştirilebilir
+                        console.log('Form gönderildi.');
+                    }
+                },
+                showErrorMessage() {
+                    // Hata mesajını göster
+                    const errorMessage = document.getElementById('errorMessage');
+                    errorMessage.style.display = 'block';
+        
+                    // 5 saniye sonra hata mesajını gizle
+                    setTimeout(() => {
+                        errorMessage.style.display = 'none';
+                    }, 5000);
+                }
+            }
+        });
+        </script>
+
 </body>
 </html>
