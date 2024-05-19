@@ -84,7 +84,7 @@ section{
 }
 .cocuk_anasayfa h1{
     font-size: 40px;
-    color:rgb(0, 172, 172);
+    color:rgb(15, 153, 153);
     margin-bottom: 25px;
 }
 .cocuk_anasayfa p{
@@ -294,6 +294,9 @@ section{
     margin-bottom: 20px;
     text-align:left;
 }
+a:visited {
+    color:  blue;
+}
 /*--------------------------------------------------------------*/
 
 #quote-container {
@@ -307,6 +310,7 @@ section{
     margin: 110px auto;
 }
 #quote {
+    margin-top: 15px;
     font-size: 1.2em;
     margin-bottom: 20px;
 }
